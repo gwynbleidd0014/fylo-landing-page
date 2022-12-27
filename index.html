@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img class="logo" src="./images/logo.svg" alt="logo" />
+        <ul class="nav-items">
+          <li class="nav-item">Features</li>
+          <li class="nav-item">Team</li>
+          <li class="nav-item">Sign In</li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <img
+          class="hero-img"
+          src="./images/illustration-1.svg"
+          alt="ilustration of files"
+        />
+        <article class="hero-info">
+          <div class="hero-info-main">
+            <h1 class="hero-heading">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p class="hero-text">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+          </div>
+          <div class="hero-cta">
+            <form action="" method="post" class="hero-cta-form">
+              <div class="input-group">
+                <input
+                  class="hero-cta-inp inp"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                />
+                <div class="error">Please check your email</div>
+              </div>
+              <button class="btn btn-hero">Get Started</button>
+            </form>
+          </div>
+        </article>
+      </section>
+    </header>
+    <img src="./images/bg-curve-desktop.svg" class="top-bg-img" />
+
+    <main class="main">
+      <div class="main-content">
+        <img
+          class="main-img"
+          src="./images/illustration-2.svg"
+          alt="ilustration of people in front of some info desks"
+        />
+        <section class="main-info">
+          <div class="main-info-message">
+            <h1 class="main-heading">Stay productive, wherever you are</h1>
+            <p class="main-text">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="main-text">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+            <button class="btn btn-main">
+              See how Fylo works
+              <svg
+                width="16"
+                height="16"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="icon-arrow"
+              >
+                <defs>
+                  <circle id="b" cx="6" cy="6" r="6" />
+                  <filter
+                    x="-25%"
+                    y="-25%"
+                    width="150%"
+                    height="150%"
+                    filterUnits="objectBoundingBox"
+                    id="a"
+                  >
+                    <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                    <feGaussianBlur
+                      stdDeviation="1"
+                      in="shadowOffsetOuter1"
+                      result="shadowBlurOuter1"
+                    />
+                    <feColorMatrix
+                      values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
+                      in="shadowBlurOuter1"
+                    />
+                  </filter>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <g transform="translate(2 2)">
+                    <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                    <use fill="#3DA08F" xlink:href="#b" class="puta" />
+                  </g>
+                  <path
+                    d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
+                    fill="#FFF"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="main-testemonial">
+            <img
+              src="./images/icon-quotes.svg"
+              class="icon-quote"
+              alt="quote
+          icon"
+            />
+            <p class="testemonial-text">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="testemonial-user">
+              <img
+                src="./images/avatar-testimonial.jpg"
+                class="user-avatar"
+                alt="user avatar"
+              />
+              <div class="user-info">
+                <p class="user-name">Kyle Burton</p>
+                <p class="user-about">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="early-access">
+        <div class="early-access-main">
+          <h1 class="early-access-heading">Get early access today</h1>
+          <p class="early-access-text">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <form class="early-access-form">
+          <div class="input-group">
+            <input
+              class="early-access-inp inp"
+              type="email"
+              name="early-email"
+              placeholder="email@example.com"
+            />
+            <div class="error error-access">Please check your email</div>
+          </div>
+          <button class="btn btn-early">Get Started For Free</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-main">
+        <img src="./images/logo-w.svg" />
+        <div class="footer-phone">
+          <img src="./images/icon-phone.svg" class="phone-icon" />
+          <p class="phone-number">Phone: +1-543-123-4567</p>
+        </div>
+        <div class="footer-mail">
+          <img src="./images/icon-email.svg" class="mail-icon" />
+          <p class="mail-address">Phone: +1-543-123-4567</p>
+        </div>
+      </div>
+      <div class="footer-pages">
+        <ul class="info-pages">
+          <li class="info-page">About Us</li>
+          <li class="info-page">Jobs</li>
+          <li class="info-page">Press</li>
+          <li class="info-page">Blog</li>
+        </ul>
+        <ul class="important-pages">
+          <li class="important-page">Contact Us</li>
+          <li class="important-page">Terms</li>
+          <li class="important-page">Privacy</li>
+        </ul>
+      </div>
+      <div class="footer-icons">
+        <img src="./images/icon-fb.svg" class="footer-icon" />
+        <img src="./images/icon-twitter.svg" class="footer-icon" />
+        <img src="./images/icon-insta.svg" class="footer-icon" />
+      </div>
+    </footer>
+  </body>
+</html>
